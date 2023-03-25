@@ -112,6 +112,7 @@ result = (ortalama >= 50) or (final >=70)
 print("öğrenci ortalaması : {0} ve geçme durumu {1}".format(ortalama,result))
 
 """
+"""
 username = "hacerk"
 password = "12345"
 
@@ -128,6 +129,176 @@ elif(a != username) and (b != password):
 else:
     print("username hatalı")
         
+"""
+"""
+#ehliyet alabilme durmu
+
+name = input("isminiz: ")
+education = input("eğitim durumunuz: ")
+age = int(input("yaşınız:"))
+if (age >= 18)  :
+    if((education == "lise" or education == "üniversite")):
+        print("Ehliyet alabilirsiniz.")
+    else:
+        print("ehliyet alamazsınız eğitim durumunuz tutmuyor.")
+else:
+    print("ehliyet alamazsınız yaşınız tutmuyor ")
+    
+"""
+"""
+#Hesap Makinesi
+
+print("işlem Bilgilendirmesi\n 1.işlem = Toplama\n 2.İşlem = Çıkarma\n 3.İşlem= Çarpma\n 4.İşlem=Bölme")
+
+islem = int(input("işlem seçiniz:"))
+sayı1= int(input("1.sayıyı girin:"))
+sayı2=int(input("2.sayıyı girin:"))
+
+if islem == 1:
+    print("{0} ile {1} toplamı:{2}".format(sayı1,sayı2,(sayı1 + sayı2)))
+elif islem ==2:
+    print("{0} ile {1} farkı:{2}".format(sayı1,sayı2,(sayı1 - sayı2)))
+elif islem ==3:
+    print("{0} ile {1} çarpımı:{2}".format(sayı1,sayı2,(sayı1 * sayı2)))    
+elif islem ==3:
+    print("{0} ile {1} bölümü:{2}".format(sayı1,sayı2,(sayı1 / sayı2)))
+else:
+    print("geçerli bir işlem seçiniz")
+
+"""
+
+"""
+# is
+
+x = [1,2,3]
+y = [2,4]
+
+print(x is y) # aynı objecler mi diye sorar false döner.
+
+del x[2] = xin 2.indeksini siler.
+ 
+reverse fonksiyonu =
+listenin içerdiği verileri sorasıyla tam tersine çevirir.
+
+
+# in
+x= ['apple','banana']
+print('banana' in x)
+true döner = içinde var mı anlamına gelir
+replace('w','W') değiştirme metodu
+
+
+"""
+
+"""
+*****************************************
+ String metodlaarı
+upper() metodu = karakterleri büyük harfe çevirir hepsini
+lower() = hepsi küçük olur
+title() = her kelimenin  baş harfini büyük yapar
+capitalize() = girilenin ilk kelimesinin baş harfini büyük yapar
+strip() = baş ve sondaki boşluklar gider sağdaki silmek istersek rstrip() lstrip()
+split() = girilen ifade boşluk ifadelerine göre bölünür ve ayrı ayrı liste olarak aır
+join() = splitte ayrılanları birleştirir ' '.join() dersek araya boşluk koyarak birleştirir
+find() = verilen ifadenin içinde var mı o diyerek arama yapar
+startswith('H')=verilen ifade H ile mi başlıyor
+center() = verilen ifadeyi 100 karakterlik içine alır.
+count('a') = gibi ifade girdiğimiz ifadenin içinde kaç tane a old. gösterir.
+isalpha() = içindeki ifadeler alfabetik mi
+isdigit() = gelen değerlr rakam veya decimal mi
+
+********************************************
+Listeler
+my_list= [içine istenileen türde ifade yazabiliriz.]
+iki listeyi + ile tek liste şeklinde ekleyebiliriz.
+listenin eleman sayısına len() ile ulaşabiliriz
+
+in operatörü içinde mi? anlamı
+arabalar = ["mercedes"]
+result = "mercedes" in arabalar
+
+lisstenin üzerine eleman eklemek için .append() sona ekler
+istediğimz konuma ekleme yapmak için .insert(önce index bilgisis,sonra eklenecek olan)
+eleman silmek için .pop() sondaki silinir içine index vererek istediğimiz silebiliriz.
+.remove()metodunda içine silme istediğimiz değeri veriyoruz.
+.sort() liste sayısal büyüklük olarak sıralanır veya alfabatik
+.reverse diyerek listeyi tam tersine çevirebilirz.
+.count() istediğimiz elamanı saydırabiliriz.
+.clear() siler her şeyi
+.index() deyip içine index numarasını istediğimiz ifadeyi yazariz ve hangi indexte old. öğreniriz.
+
+elemanları ters çevirme [::-1]
+min(),max()
+*********************************************
+Tuple
+
+list = [1,2,3] tipi list
+tuple = (1,"iki,3") tipi tuple
+
+indexlerine ulaşabiliriz ikisininde
+eklemeler yapabiliriz
+tuple da herhangi bir elemana atama yapamayız
+tuple[0] = "deniz" gibi yapamayız
+tek bir eleman üzerinde değişime izin vermiyor.
+.count()
+.index() 
+*************************************
+Dictionary
+key - value şeklinde 
+
+sehirler = ["kocaeli", "istanbul"]
+plaka = [41,34]
+print(plaka[sehirler.index("kocaeli")])
+41 çıktısını verir
+
+bunu dic'le
+plakalar = {"kocaeli": 41, "istanbul": 34}
+print(plakalar["kocaeli"])
+çıktı 41
+plakalar["ankara"] = 6 dediğimizde eklenme olur
+*******************************************
+Sets
+fruits = {"orange"","apple"}
+print(fruits)
+index değerlerine ulaşamayız indexlenemez bir liste
+sıralama yapamayız
+.add ile yeni eleman ekleyebiliriz
+fruits.add("banana")
+.update() ile liste gönderebilriz
+fruits.update(["mango","grape"]) 
+eğer zaten içinde olan bir elamanı da eklemiş olsaydık aynı olan dğerler içerde saklanmazdı
+ve en sona sadece 1 tane olacak şekilde ekleniri.
+.remove("apple") sieriz
+.discaard("apple")silerizz
+.pop() herhangi bir eleman olabilir silinen eleman
+.clear() bütün elemandar silinir
+****************************************
+Value and Referance
+
+value typler bellekte farklı adreslerde tutulurlar
+yapılan değişiklik birbirinden bağımsız olur
+string number (float int )değerler
+
+referance
+list,class
+aynı şekilde değişim gösterirler
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
