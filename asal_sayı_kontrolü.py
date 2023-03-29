@@ -24,4 +24,13 @@ if asal_mi:
 else:
     print("%s asal sayı değildir"%(sayi))
         
-            
+
+
+
+
+
+
+
+
+
+
