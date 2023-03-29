@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 28 23:20:39 2023
+Created on Wed Mar 29 00:51:43 2023
 
 @author: Hacer
 """
@@ -11,7 +11,6 @@ ifadeleriyle buldurmaya çalışın.
 ** 100 üzerinden puanlama yapın. Her soru 20 puan
 **Hak bilgisini kullanıcıdan alın ve her soru belirtilen
 can sayısı üzerinden hesaplansın.
-
 random()
 random modülünün random() adlı fonksiyonunu kullanarak,
 0.0 ile 1.0 arasında rastgele bir kayan noktalı sayı üretebilirsiniz
@@ -23,9 +22,7 @@ kayan noktalı sayılar yerine tam sayılar üretmek de isteyebiliriz.
 """
 """
 #1
-
 import random
-
 x = random.randint(1, 10)
 can = int(input("Hak sayısını giriniz:"))
 puan=100
@@ -50,7 +47,6 @@ while True:
         break
        
 print("Tahmin etmeniz gereken sayı %s"%(x))
-
 """
 
 """
@@ -60,7 +56,6 @@ sayi = random.randint(1,100)
 can = int(input("Kaç hak kullanmak istersiniz:"))
 hak = can 
 sayac = 0
-
 while hak > 0:
     hak -= 1
     sayac += 1
@@ -78,21 +73,3 @@ while hak > 0:
         
     
 """  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
